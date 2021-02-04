@@ -1,0 +1,8 @@
+.eggs
+.idea
+htmlcov
+__pycache__
+*.egg-info
+.coverage
+_version.py
+dist
