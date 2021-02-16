@@ -1,7 +1,7 @@
 import setuptools
 from invoke import Collection, task
-from . import tasks
 
+from . import tasks
 
 __ALL__ = ["app", "setup"]
 TASKS = Collection("tasks")

@@ -23,14 +23,14 @@ def run(c, name):
                 dedent(
                     f"""
             #!/usr/bin/env python
-            
-            
+
+
             import sys
-            
-            
+
+
             if __name__ == '__main__':
                 from django.core.management import execute_from_command_line
-            
+
                 execute_from_command_line(sys.argv)
             """
                 )
@@ -50,7 +50,7 @@ def run(c, name):
                     f"""
             import django12factor
             d12f = django12factor.factorise()
-            
+
             DEBUG = d12f['DEBUG']
             """
                 )
