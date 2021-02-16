@@ -21,7 +21,7 @@ def run(c, name):
         with open("manage.py", "w") as f:
             f.write(
                 dedent(
-                    f"""
+                    """
             #!/usr/bin/env python
 
 
@@ -47,7 +47,7 @@ def run(c, name):
         with open(settings_path, "w") as f:
             f.write(
                 dedent(
-                    f"""
+                    """
             import django12factor
             d12f = django12factor.factorise()
 

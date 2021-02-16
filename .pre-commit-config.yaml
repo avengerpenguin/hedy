@@ -30,6 +30,7 @@ repos:
     rev: v0.902
     hooks:
       - id: mypy
+        additional_dependencies: [types-requests, types-PyYAML, types-Flask, types-Werkzeug]
   - repo: https://github.com/asottile/pyupgrade
     rev: v2.19.4
     hooks:
