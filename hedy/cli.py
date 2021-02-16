@@ -16,8 +16,8 @@ def main():
                 dedent(
                     f"""
                 import hedy
-                
-                
+
+
                 namespace = hedy.app("{name}")
                 """
                 )
