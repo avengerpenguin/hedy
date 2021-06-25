@@ -38,7 +38,7 @@ setup(
         "Topic :: Internet :: WWW/HTTP",
     ],
     project_urls={
-        "Issue Tracker": "https://github.com/hedy/voltaire/issues",
+        "Issue Tracker": "https://github.com/avengerpenguin/hedy/issues",
     },
     keywords=["pelican", "invoke"],
     install_requires=[
@@ -50,4 +50,7 @@ setup(
         "setuptools_scm>=3.3.1",
         "pre-commit",
     ],
+    extras_require={
+        "test": ["pytest", "pytest-pikachu", "pytest-mypy"],
+    },
 )

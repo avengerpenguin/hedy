@@ -14,7 +14,7 @@ def main():
         with open("tasks.py", "w") as f:
             f.write(
                 dedent(
-                    f"""
+                    f"""\
                 import hedy
 
 
