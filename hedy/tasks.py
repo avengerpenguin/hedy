@@ -70,13 +70,13 @@ def deb(c, name):
     c.run("python setup.py sdist")
     c.run(
         f"{fpm} --verbose --input-type virtualenv --output-type deb "
-        f"--name virtualenv-{name} --version {version} "
+        f"--name virtualenv-{name} --version {version} --architecture all "
         f"--depends python3-distutils --python-bin /usr/bin/python3 "
         f"--prefix /opt/{name} dist/*"
     )
     c.run(
         f"{fpm} --verbose --input-type dir --output-type deb "
-        f"--name {name} --version {version} --depends virtualenv-{name} "
+        f"--name {name} --version {version} --depends virtualenv-{name} --architecture all "
         f"--depends apache2 --depends libapache2-mod-wsgi-py3 "
         f"--after-install deb/after-install --config-files /etc deb/etc=/"
     )
